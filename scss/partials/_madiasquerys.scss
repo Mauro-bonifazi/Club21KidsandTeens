@@ -1,0 +1,45 @@
+   @mixin media-query($pantalla) {
+       @if $pantalla ==mobile {
+           @media screen and (max-width:500px) {
+               @content
+           }
+       }
+   }
+
+   .formulario {
+       @include media-query(mobile) {
+           width: 80% !important;
+
+       }
+
+   }
+   .mapa{
+    @include media-query(mobile){
+        width: 100%;
+        text-align: center;
+       
+    }
+   }
+   .tex-contacto{
+    @include media-query(mobile){
+        flex-wrap: wrap;
+        justify-content: center;
+      
+    }
+ 
+   }
+   .servicios-fila{
+    @include media-query(mobile) {
+        width: 100% !important;
+        text-align: center;
+    }
+
+}
+.icono-wrap{
+    @include media-query(mobile) {
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+}
+
+

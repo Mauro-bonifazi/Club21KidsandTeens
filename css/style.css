@@ -1,145 +1,185 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
-
-body {
-    font-family: 'Times New Roman', Times, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+.navbar {
+  background-color: white;
+}
+.navbar .dropdown-menu {
+  background-color: white;
+}
+.navbar .navbar-brand img {
+  height: 64px;
+  transition: 0.5s;
+}
+.navbar .navbar-brand img:hover {
+  transform: scale(1.3);
+}
 
 #menu a {
-    font-size: 18px;
-    font-weight: bold;
-    color: blue;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
 }
 
-.navbar-brand img {
-    height: 90px;
-
-}
-
-.carousel-inner {
-    max-height: 30rem;
-}
-
-
-.container img {
-    width: 100%;
-    height: 100%;
+.titulo {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  font-weight: bold;
+  text-align: center;
 }
 
 .card-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+.card-img:hover {
+  transform: scale(1.1);
 }
 
-
-.conocenos {
-    justify-content: center;
-    font-size: larger;
-    color: black;
-    margin: 50px;
-    font-family: 'Times New Roman', Times, sans-serif serif;
-    background-color: rgb(135, 210, 183);
-}
-.container {
-    background-color: ;
-    display: flex;
-    margin: 50px;
-    justify-content: center;
-    gap: 50px;
+.carousel-inner {
+  max-height: 30rem;
 }
 
-.container img {
-    width: 25%;
-    height: 25%;
-    gap: 50px;
-    justify-content: center;
-    margin: 20px;
-    object-fit: cover;
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.gallery img {
+  max-width: 400px;
+  padding: 1rem;
+  opacity: 0.9;
+  transition: 0.5s;
+}
+.gallery img:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+h1, h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: black;
+  margin: 1opx;
+  padding: 10px;
+  font-weight: bold;
 }
 
 h2 {
+  color: #00CECB;
+  font-size: 2re;
+}
 
-    font-family: 'Times New Roman', Times, serif;
-    display: flex;
-    color: black;
-    justify-content: center;
-    margin: 1opx;
-    padding: 10px;
-
+.conocenos {
+  text-align: center;
+  font-size: larger;
+  color: black;
+  margin: 50px;
+  font-family: "Times New Roman", Times, serif;
+  background-color: #00CECB;
+}
+.conocenos h1, .conocenos h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: black;
+  font-weight: bold;
 }
 
 .container-galeria {
-    margin: 100px;
-    padding: 20px;
-    display: grid;
-    grid-template-rows: repeat(4, 300px);
-    grid-template-columns: repeat(3, 1fr);
-    row-gap: 10px;
-    column-gap: 10px;
+  width: 100%;
+  padding: 20px;
+  display: grid;
+  grid-template-rows: repeat(4, 300px);
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 10px;
+  column-gap: 10px;
 }
 
 .container-galeria img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .img-2 {
-    grid-row: 1/3;
-    grid-column: 3/3;
-
+  grid-row: 1/3;
+  grid-column: 3/3;
 }
 
 .img-3 {
-    grid-column: 1/3;
-    grid-row: 1 /3;
+  grid-column: 1/3;
+  grid-row: 1/3;
 }
-
-
 
 .img-4 {
-    grid-column: 1/4;
-    grid-row: 4/4;
+  grid-column: 1/4;
+  grid-row: 4/4;
 }
 
-
-
 .novedades img {
-    width: 60%;
-    height: 60%;
+  width: 60%;
+  height: 60%;
+}
+.novedades h3 {
+  font-family: "Times New Roman", Times, serif;
 }
 
 .mapa {
-    margin: 50px;
-    display: flex;
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  transition: 0.5s;
+}
+.mapa:hover {
+  transform: scale(1.1);
+}
+.mapa .tex-contacto {
+  font-size: larger;
+  margin: 10px;
+  padding: 10px;
+  font-family: "Times New Roman", Times, serif;
+  color: black;
+  font-size: m;
+  justify-content: start;
+}
+
+@media screen and (max-width: 500px) {
+  .formulario {
+    width: 80% !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .mapa {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .tex-contacto {
+    flex-wrap: wrap;
     justify-content: center;
+  }
 }
 
-.tex-contacto {
-    font-size: larger;
-    margin: 10px;
-    padding: 10px;
-    font-family: 'Times New Roman', Times, serif;
-    color: black;
-    font-size: m;
+@media screen and (max-width: 500px) {
+  .servicios-fila {
+    width: 100% !important;
+    text-align: center;
+  }
 }
 
-.tex-contacto-2 {
-    display: flex;
-    justify-content: center;
+@media screen and (max-width: 500px) {
+  .icono-wrap {
+    flex-wrap: wrap;
+    justify-content: center !important;
+  }
 }
 
-
-
-
-
-
-
-
-@media screen and (max-width 600px;) {
-    .formulario {
-        width: 80% !important;
-    }
-
-}
+/*# sourceMappingURL=style.css.map */
