@@ -13,13 +13,8 @@
        }
 
    }
-   .mapa{
-    @include media-query(mobile){
-        width: 100%;
-        text-align: center;
-       
-    }
-   }
+
+   
    .tex-contacto{
     @include media-query(mobile){
         flex-wrap: wrap;
